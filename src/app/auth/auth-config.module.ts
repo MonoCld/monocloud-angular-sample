@@ -9,7 +9,7 @@ import { AuthModule } from 'angular-auth-oidc-client';
             redirectUrl: window.location.origin,
             postLogoutRedirectUri: window.location.origin,
             clientId: 'please-enter-clientId',
-            scope: 'please-enter-scopes', // 'openid profile ' + your scopes
+            scope: 'openid profile email', // 'openid profile ' + your scopes
             responseType: 'code',
             silentRenew: false,
             renewTimeBeforeTokenExpiresInSeconds: 10,
